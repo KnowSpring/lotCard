@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "blackcard": "/cheng-component/blackCard/blackcard",
+    "whitecard": "/cheng-component/whiteCard/whitecard",
+    "bluecard": "/cheng-component/blueCard/bluecard",
+    "blackyellowcard": "/cheng-component/blackYellowCard/blackyellowcard"
+  }
+}

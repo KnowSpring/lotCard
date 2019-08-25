@@ -1,0 +1,124 @@
+.head {
+  height: 110rpx;
+}
+
+.head1 {
+  display: flex;
+  margin-top: 40rpx;
+}
+
+.head2 {
+  display: flex;
+  margin-top: 40rpx;
+}
+
+.button1 {
+  font-family: SourceHanSansCN-Regular;
+  color: #f5a53b;
+  width: 50%;
+  height: 100rpx;
+  margin-left: 32rpx;
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: #f5a53b;
+  background-color: transparent;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 200rpx;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 200rpx;
+}
+
+.button2 {
+  color: white;
+  width: 50%;
+  height: 100rpx;
+  margin-right: 32rpx;
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: #f5a53b;
+  background-color: #f5a53b;
+  border-top-right-radius: 200rpx;
+  border-top-left-radius: 0rpx;
+  border-bottom-right-radius: 200rpx;
+  border-bottom-left-radius: 0rpx;
+}
+
+.button3 {
+  font-family: SourceHanSansCN-Regular;
+  color: white;
+  width: 50%;
+  height: 100rpx;
+  margin-left: 32rpx;
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: #f5a53b;
+  background-color: #f5a53b;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 200rpx;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 200rpx;
+}
+
+.button4 {
+  color: #f5a53b;
+  width: 50%;
+  height: 100rpx;
+  margin-right: 32rpx;
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: #f5a53b;
+  background-color: white;
+  border-top-right-radius: 200rpx;
+  border-top-left-radius: 0rpx;
+  border-bottom-right-radius: 200rpx;
+  border-bottom-left-radius: 0rpx;
+}
+
+.info {
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40rpx;
+  border: solid #f5a53b;
+}
+.info-left{
+margin-left:20rpx;
+
+}
+.info-left image {
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+
+.info-img {
+  width: 100%;
+  height: 100%;
+}
+
+.info-right {
+  flex: 1;
+}
+
+.info-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.info-name {
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  font-size: 40rpx;
+  font-family: SourceHanSansCN-Medium;
+}
+
+.info-time {
+  padding-left: 20rpx;
+  padding-top: 10rpx;
+  font-size: 28rpx;
+  color: #999;
+}

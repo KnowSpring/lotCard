@@ -1,0 +1,39 @@
+<view class='mycard'>
+  <view class='head'>
+    <view class='head1' wx:if="{{state}}">
+      <button class='button3' bindtap='mycollection'>我的收藏</button>
+      <button class='button4' bindtap='lookForMe'>谁看过我</button>
+    </view>
+    <view class='head2' wx:if="{{!state}}">
+      <button class='button1' bindtap='mycollection'>我的收藏</button>
+      <button class='button2' bindtap='lookForMe'>谁看过我</button>
+    </view>
+  </view>
+
+  <view class='main' wx:if="{{state}}">
+  <navigator open-type='redirectTo' wx:for="{{collections}}" wx:key="item" url='/pages/sharecard/sharecard?openid={{item.collectOpenId}}'>
+    <view class='info'>
+      <view class='info-left'>
+        <image class='info-img' src='{{item.collectedImg}}'></image>
+      </view>
+      <view class='info-right'>
+        <text class='info-name'>{{item.collectedName}}</text>
+        <text class='info-time'>{{item.collectionTime}}我收藏了TA的名片</text>
+      </view>
+    </view>
+    </navigator>
+
+  </view>
+  <view class='main' wx:if="{{!state}}">
+    <view class='info' wx:for="{{lookFoeMe}}" wx:key="item">
+      <view class='info-left'>
+        <image class='info-img' src='{{item.visiterphoto}}'></image>
+      </view>
+      <view class='info-right'>
+        <text class='info-name'>{{item.visiterName}}</text>
+        <text class='info-time'>{{item.visitTime}}访问了我的名片</text>
+      </view>
+    </view>
+  </view>
+  
+</view>

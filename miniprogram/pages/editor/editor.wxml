@@ -1,0 +1,71 @@
+<view class="contain">
+ <view>
+    <blackcard id="blackcard" wx:if="{{cardstyle == 'blackcard'}}"
+    name="{{usercardInfo.username}}" job="{{usercardInfo.job}}" company="{{usercardInfo.department}}" address="{{usercardInfo.workplace}}" tel="{{usercardInfo.phonenumber}}"  email="{{usercardInfo.mailadress}}"
+    web="{{usercardInfo.web}}" headimage="{{usercardInfo.headimage}}" chooseimg="{{true}}">
+    </blackcard>
+       <whitecard id="blackcard" wx:if="{{cardstyle == 'whitecard'}}"
+    name="{{usercardInfo.username}}" job="{{usercardInfo.job}}" company="{{usercardInfo.department}}" address="{{usercardInfo.workplace}}" tel="{{usercardInfo.phonenumber}}"  email="{{usercardInfo.mailadress}}"
+    web="{{usercardInfo.web}}" headimage="{{usercardInfo.headimage}}" chooseimg="{{true}}">
+    </whitecard>
+    <bluecard id="blackcard" wx:if="{{cardstyle == 'bluecard'}}"
+    name="{{usercardInfo.username}}" job="{{usercardInfo.job}}" company="{{usercardInfo.department}}" address="{{usercardInfo.workplace}}" tel="{{usercardInfo.phonenumber}}"  email="{{usercardInfo.mailadress}}"
+    web="{{usercardInfo.web}}" headimage="{{usercardInfo.headimage}}" chooseimg="{{true}}">
+    </bluecard>
+    <blackyellowcard id="blackcard" wx:if="{{cardstyle == 'blackyellowcard'}}"
+    name="{{usercardInfo.username}}" job="{{usercardInfo.job}}" company="{{usercardInfo.department}}" address="{{usercardInfo.workplace}}" tel="{{usercardInfo.phonenumber}}"  email="{{usercardInfo.mailadress}}"
+    web="{{usercardInfo.web}}" headimage="{{usercardInfo.headimage}}" chooseimg="{{true}}">
+    </blackyellowcard>
+  </view>
+  <view>
+  <text class="zl">您的资料</text>
+  <text class="dj">(点击头像可更换图片)</text>
+  </view>
+  <view class="foot">
+  <form class="form" bindsubmit="formSubmit">
+    <view>
+    <text>姓  名</text>
+    <input name="username" bindinput="inputname" placeholder='请填写您的姓名'value="{{usercardInfo.username}}"></input>
+    </view>
+    <view>
+    <text>手  机</text>
+    <input name="phonenumber" bindinput="inputphonenumber" placeholder='请填写你的手机'value="{{usercardInfo.phonenumber}}"></input>
+    </view>
+    <view>
+    <text>职  位</text>
+    <input name="job" bindinput="inputjob" placeholder='请填写您的职位'value="{{usercardInfo.job}}"></input>
+    </view>
+    <view>
+    <text>单位名称</text>
+    <input name="department" bindinput="inputcompany" placeholder='请填写您的单位名称'value="{{usercardInfo.department}}"></input>
+    </view>
+    <view>
+    <text>办公地点</text>
+    <input name="workplace" bindtap='chooseLocation' bindinput="inputaddress" placeholder='请填写您的办公地点'value="{{locationAddress}}"></input>
+    </view>
+    <view>
+    <text>主营业务</text>
+    <input name="mbuessness" placeholder='请填写您的主营业务'value="{{usercardInfo.mbuessness}}"></input>
+    </view>
+    <view>
+    <text>固定电话</text>
+    <input name="phone" placeholder='请填写您的固定电话'value="{{usercardInfo.phone}}"></input>
+    </view>
+    <view>
+    <text>官  网</text>
+    <input name="web" bindinput="inputweb" placeholder='请填写您的官网网址'value="{{usercardInfo.web}}"></input>
+    </view>
+    <view>
+    <text>邮  箱</text>
+    <input name="mailadress" bindinput="inputemail" placeholder='请填写您的邮箱'value="{{usercardInfo.mailadress}}"></input>
+    </view>
+    <view>
+    <text>微  信</text>
+    <input name="wechat" placeholder='请填写您的微信'value="{{usercardInfo.wechat}}"></input>
+    </view>
+    <view>
+  <button class="bbutton" formType="submit">保存</button>
+  </view>
+  </form>
+  </view>
+</view>

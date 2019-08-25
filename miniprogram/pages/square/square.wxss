@@ -1,0 +1,34 @@
+page{
+  background-color: #eee;
+  padding-right: 26rpx;
+  box-sizing: border-box;
+}
+.contain{
+  display: flex;
+  flex-direction:column; 
+}
+.head{
+ border: 2rpx solid #ccc;
+ text-align: center;
+  font-size: 40rpx;
+  border-radius: 30rpx;
+  margin-bottom: 50rpx;
+}
+.head image{
+  width: 26rpx;
+  height: 30rpx;
+}
+.head .picker{
+  display: inline-block;
+  margin-left: 10rpx;
+}
+.card{
+  display: flex;
+  flex-direction:column; 
+  align-items: center;
+}
+
+.top-first-img {
+  width: 680rpx;
+  height: 400rpx;
+}

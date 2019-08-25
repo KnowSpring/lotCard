@@ -1,0 +1,29 @@
+<view class='contain'>
+  <view class="head">
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <image src="../../images/a.png"></image>
+      <view class="picker">
+        地区选择：{{region[0]}}{{region[1]}}{{region[2]}}
+      </view>
+    </picker>
+  </view>
+  <view class="card" wx:for="{{all}}" wx:key="{{all.id}}">
+    <block wx:if="{{item.isshowcard}}">
+      <whitecard catchtap="card" data-src="{{item._openid}}" class='top-first-img' wx:if="{{ item.cardstyle === 'whitecard'}}" name="{{item.username}}" job="{{item.job}}" company="{{item.job}}" address="{{item.workplace}}" tel="{{item.phonenumber}}" email="{{item.mailadress}}"
+        web="{{item.web}}" headimage="{{item.headimage}}" chooseimg="{{false}}">>
+      </whitecard>
+
+      <blackcard catchtap="card" data-src="{{item._openid}}" class='top-first-img' wx:if="{{item.cardstyle === 'blackcard'}}" name="{{item.username}}" job="{{item.job}}" company="{{item.department}}" address="{{item.workplace}}" tel="{{item.phonenumber}}" email="{{item.mailadress}}"
+        web="{{item.web}}" headimage="{{item.headimage}}">
+      </blackcard>
+
+      <blackyellowcard catchtap="card" data-src="{{item._openid}}" class='top-first-img' wx:if="{{item.cardstyle === 'blackyellowcard'}}" name="{{item.username}}" job="{{item.job}}" company="{{item.department}}" address="{{item.workplace}}" tel="{{item.phonenumber}}"
+        email="{{item.mailadress}}" web="{{item.web}}" headimage="{{item.headimage}}" chooseimg="{{false}}">>
+      </blackyellowcard>
+
+      <bluecard catchtap="card" data-src="{{item._openid}}" class='top-first-img' wx:if="{{item.cardstyle === 'bluecard'}}" name="{{item.username}}" job="{{item.job}}" company="{{item.department}}" address="{{item.workplace}}" tel="{{item.phonenumber}}" email="{{item.mailadress}}"
+        web="{{item.web}}" headimage="{{item.headimage}}" chooseimg="{{false}}">>
+      </bluecard>
+    </block>
+  </view>
+</view>

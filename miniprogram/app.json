@@ -1,0 +1,23 @@
+
+{
+  "pages": [
+    "pages/authorization/authorization",
+    "pages/sharecard/sharecard",
+    "pages/personcard/personcard",
+    "pages/mycard/mycard",
+    "pages/square/square",
+    "pages/createcard/createcard",
+    "pages/cardstyle/cardstyle",
+    "pages/cardcode/cardcode",
+    "pages/editor/editor",
+    "pages/privacySetting/privacySetting"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "个人名片",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
